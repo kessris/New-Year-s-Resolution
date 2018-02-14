@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bcgamejam2018.resolution.bcgamejam2018resolution.feature.RelationshipQuizActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/relationship"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/backbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="goBack"/>/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="60dp"
+            android:text="Choose a topic"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/discoveryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/romanceButton"
+                android:layout_weight="1"
+                android:text="Discovery" />
+
+            <Button
+                android:id="@+id/romanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/discoveryButton"
+                android:layout_alignBottom="@+id/discoveryButton"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="Romance" />
+
+            <Button
+                android:id="@+id/breakupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/romanceButton"
+                android:layout_alignBottom="@+id/romanceButton"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:text="BREAKUP" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
